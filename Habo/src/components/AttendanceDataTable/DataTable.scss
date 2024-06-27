@@ -1,0 +1,40 @@
+@import "../../styles//variables.scss";
+
+.dataTable {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    background-color: $main-bg;
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: $dark-bg;
+      color: $main-color;
+  
+      th, td {
+        padding: 12px 16px;
+        border: 1px solid $soft-bg;
+        text-align: left;
+      }
+  
+      th {
+        background-color: $soft-bg;
+        color: $dark-color;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+  
+      td {
+        &:nth-child(even) {
+          background-color: lighten($dark-bg, 5%);
+        }
+      }
+  
+      tbody tr:hover {
+        background-color: $soft-bg;
+        color: $dark-color;
+      }
+    }
+  }
+  

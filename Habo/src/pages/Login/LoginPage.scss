@@ -1,0 +1,27 @@
+.LoginPage{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    .imgContainer{
+        flex: 2;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // This ensures the image covers the entire container
+            object-position: center; // This centers the image within the container
+          }
+      
+    }
+
+    
+    .loginFormContainer{
+        flex: 2;
+        width: 50%;
+        background-color: #FFFFFF;
+    }
+}

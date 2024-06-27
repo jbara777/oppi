@@ -1,0 +1,81 @@
+/* Base styles */
+
+.leave-management {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1A1E21;
+  color: #D4AF37;
+}
+
+.leave-management__header {
+  text-align: center;
+}
+
+.leave-management__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.leave-management__form-group {
+  margin-bottom: 1rem;
+}
+
+/* Labels and Inputs */
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #9b8029 ;
+}
+
+.leave-management__select,
+.leave-management__input,
+.leave-management__textarea,
+.leave-management__file-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  resize: none; 
+  color: #9b8029;
+  background-color: #1A1E21;
+}
+
+.leave-management__select {
+  &:focus {
+    outline: none;
+    border-color: #999;
+  }
+}
+
+/* Radio buttons */
+
+.leave-management__form-group label {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.leave-management__form-group input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* Submit button */
+
+.leave-management__submit {
+  background-color: #D4AF37;
+  color: #1A1E21;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.leave-management__submit:hover {
+  background-color:#9b8029;
+}

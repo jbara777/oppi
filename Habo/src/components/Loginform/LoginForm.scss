@@ -1,0 +1,86 @@
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: transparent;
+  color: #D4AF37;
+
+  img {
+    width: 150px; // Adjust the logo size as needed
+    height: 100px;
+    margin-bottom: 50px; // Add some space below the logo
+  }
+
+  .loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; // Make the container take the full width
+    max-width: 400px; // Limit the width of the container
+    padding: 20px;
+
+    .loginForm {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        margin-bottom: 8px; // Add some space below the label
+      }
+
+      input {
+        margin-bottom: 15px; // Add some space below the input
+        padding: 10px; // Add padding inside the input
+        border: 1px solid #ccc; // Add a border
+        border-radius: 20px; // Add border radius for rounded corners
+        width: 100%; // Adjust width as needed
+      }
+
+      .inputContainer {
+        position: relative; // Ensure the container is relative for absolute positioning of the eye icon
+
+        input {
+          padding-right: 40px; // Space for the toggle icon
+        }
+
+        .togglePassword {
+          position: absolute;
+          top: 40%;
+          right: 10px;
+          transform: translateY(-50%);
+          cursor: pointer;
+          user-select: none;
+          width: 20px; // Adjust width and height as needed
+          height: auto;
+        }
+      }
+
+      button {
+        padding: 10px;
+        background-color: #D4AF37; // Button background color
+        color: white; // Button text color
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        
+      }
+
+      .recContainer {
+        transform: scale(0.85); /* Adjust the scale value as needed */
+        transform-origin: 0 0;
+        display: flex;
+        padding-left: 30px;
+      }
+
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
